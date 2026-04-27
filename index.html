@@ -360,7 +360,7 @@ document.getElementById('sndBtn').addEventListener('click', () => {
 // ─── CANVAS SETUP ────────────────────────────────────────────────
 const canvas = document.getElementById('gameCanvas');
 const ctx    = canvas.getContext('2d');
-const COLS = 25, ROWS = 25;
+const COLS = 22, ROWS = 22;
 let CW, CH, TILE;
 
 function resizeCanvas() {
@@ -470,7 +470,7 @@ function draw() {
   // food (pulsing pixel apple)
   const fx = ox + food.x * TILE;
   const fy = oy + food.y * TILE;
-  const fs = 3 + fp;
+  const fs = 5 + fp;
   const fc = Math.floor((TILE - fs*2) / 2);
   // body
   ctx.fillStyle = '#C0392B';
